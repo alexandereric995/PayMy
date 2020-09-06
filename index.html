@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <script>
+        <body oncontextmenu="return false;">
+            <!--
+//edit by Alexander Eric
+var message="";
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+                alert(message);
+return false;
+}
+}
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+                alert(message);
+return false;
+}
+}
+}
+if (document.layers){
+                document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+                document.onmousedown = clickIE4;
+}
+document.oncontextmenu=new Function("alert(message);return false")
+// -->
+ </script>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>PayMY</title>
+    <meta name="author" author="Alexander Eric" content="desciption" description="epayment gateway ini ditulis oleh Alexander Eric">
+    <meta name="open-business-partnership" author="opp" content="desciption" description="another useless tag written"/>
+    <meta name="author" author="not goverment" content="description" description="create by non goverment developer" />
+    <meta name="Server" License="Remote Hosting" Remote Hosting="Fake Agent (lol)" ServerID="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"/>
+    <meta name="description" description="the ip was reserve, all non battery commercials are not included"/>
+    <link rel='stylesheet' href='paymy-styles.css'>
+    <style>
+        .olr-table1 {
+            border-collapse: collapse;
+        }
+
+            .olr-table1 th, .olr-table1 td {
+                padding: 2px;
+                border: 0;
+            }
+
+        .olr-table2 {
+            border-collapse: collapse;
+        }
+
+            .olr-table2 th, .olr-table2 td {
+                padding: 4px;
+                border: 0;
+            }
+    </style>
+    <script src='olr-validate.js'></script>
+</head>
+<body>
+    <div id='olr-content'>
+        <form method='post' id='OnlineRegForm' name='OnlineRegForm' action='olr-pp-send.php'>
+            <center><h><img src="https://i.ibb.co/c66qkVT/paymy-4.png" /></h></center>
+            <h2 style='text-align:center;'>PayMy<br />Daftar</h2>
+            <p>e-payment Gateway <b>PayMY</b> </p>
+
+            <!-- list of required fields -->
+            <input type='hidden' name='required_fields' value='txt_firstname1,txt_lastname1,rad_gender1,txt_street,txt_city,txt_state,txt_zip,txt_email1,num_men_dancers,num_women_dancers,txt_phone1,rad_number1,sel_number2' />
+            <span class='olr-label olr-required'>Nama Pertama:&nbsp;</span>  <input type='text' name='txt_firstname1' size='20' maxlength='20' />&nbsp;&nbsp;&nbsp;
+            <span class='olr-label olr-required'>Nama Akhir:&nbsp;</span>  <input type='text' name='txt_lastname1' size='20' maxlength='20' />&nbsp;&nbsp;&nbsp;<span class='olr-label olr-required'>Jantina:&nbsp;<input type='radio' name='rad_gender1' value='F' /> P &nbsp;&nbsp;<input type='radio' name='rad_gender1' value='M' /> L</span>
+            &nbsp;&nbsp;&nbsp;<input type='checkbox' name='chk_student1' value='' /> <span class='olr-label'>Pelajar</span>
+            &nbsp;&nbsp;&nbsp;<input type='checkbox' name='chk_child1' value='' /> <span class='olr-label'>Tanggungan</span>
+            &nbsp;&nbsp;&nbsp; <span class='olr-label'>Umur Tanggungan:&nbsp;</span> <input type='text' size='2' maxlength='2' name='num_childage1' /><br />
+            <table class='olr-table1'>
+                <tbody>
+                    <tr>
+                        <td class='olr-center olr-top'>Nama Pertama</td>
+                        <td class='olr-center olr-top'>Nama Akhir</td>
+                        <td class='olr-center olr-top'>Jantina</td>
+                        <td class='olr-center olr-top'>Tanggungan</td>
+                        <td class='olr-center olr-top'>Umur Tanggungan</td>
+                        <td class='olr-center olr-top'>Status</td>
+                    </tr>
+                    <tr>
+                        <td class='olr-center'>
+                            <input type='text' size='20' maxlength='20'
+                                   name='txt_firstname2' />
+                        </td>
+                        <td class='olr-center'>
+                            <input type='text' size='20' maxlength='20'
+                                   name='txt_lastname2' />
+                        </td>
+                        <td class='olr-required olr-center'>
+                            <input type='radio' name='rad_gender2' value='F' /> P&nbsp;
+                            <input type='radio' name='rad_gender2' value='M' /> L
+                        </td>
+                        <td class='olr-center'>
+                            <input type='checkbox' value=''
+                                   name='chk_child2' />
+                        </td>
+                        <td class='olr-center'>
+                            <input type='text' size='2' maxlength='2'
+                                   name='num_childage2' />
+                        </td>
+                        <td class='olr-center'>
+                            <input type='checkbox' value=''
+                                   name='chk_student2' />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='olr-center'>
+                            <input type='text' size='20' maxlength='20'
+                                   name='txt_firstname3' />
+                        </td>
+                        <td class='olr-center'>
+                            <input type='text' size='20' maxlength='20'
+                                   name='txt_lastname3' />
+                        </td>
+                        <td class='olr-required olr-center'>
+                            <input type='radio' name='rad_gender3' value='F' /> P&nbsp;
+                            <input type='radio' name='rad_gender3' value='M' /> L
+                        </td>
+                        <td class='olr-center'>
+                            <input type='checkbox' value=''
+                                   name='chk_child3' />
+                        </td>
+                        <td class='olr-center'>
+                            <input type='text' size='2' maxlength='2'
+                                   name='num_childage3' />
+                        </td>
+                        <td class='olr-center'>
+                            <input type='checkbox' value=''
+                                   name='chk_student3' />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='olr-center'>
+                            <input type='text' size='20' maxlength='20'
+                                   name='txt_firstname4' />
+                        </td>
+                        <td class='olr-center'>
+                            <input type='text' size='20' maxlength='20'
+                                   name='txt_lastname4' />
+                        </td>
+                        <td class='olr-required olr-center'>
+                            <input type='radio' name='rad_gender4' value='F' /> P&nbsp;
+                            <input type='radio' name='rad_gender4' value='M' /> L
+                        </td>
+                        <td class='olr-center'>
+                            <input type='checkbox' value=''
+                                   name='chk_child4' />
+                        </td>
+                        <td class='olr-center'>
+                            <input type='text' size='2' maxlength='2'
+                                   name='num_childage4' />
+                        </td>
+                        <td class='olr-center'>
+                            <input type='checkbox' value=''
+                                   name='chk_student4' />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type='checkbox' name='chk_noshare' value='' />
+            All Information above are true<br />
+            <span class='olr-label olr-required'>
+                Hubungi:&nbsp;
+                <input type='text' name='txt_phone1' value='' maxlength='12' />&nbsp;&nbsp; &nbsp;&nbsp;
+                <input type='radio' name='rad_phone1' value='Home' checked='checked' /> Rumah&nbsp;&nbsp;
+                <input type='radio' name='rad_phone1' value='Cell' /> Telefon Bimbit&nbsp;&nbsp;
+                <input type='radio' name='rad_phone1' value='Work' /> Tempat Kerja&nbsp;&nbsp;
+            </span><br />
+            <span class='olr-label'>
+                Phone 2:&nbsp;
+                <input type='text' name='txt_phone2' value='' maxlength='12' />&nbsp;&nbsp; &nbsp;&nbsp;
+                <input type='radio' name='rad_phone2' value='Home' /> Rumah&nbsp;&nbsp;
+                <input type='radio' name='rad_phone2' value='Cell' checked='checked' /> Tel Bimbit&nbsp;&nbsp;
+                <input type='radio' name='rad_phone2' value='Work' /> Tempat Kerjak&nbsp;&nbsp;
+            </span><br />
+            <span class='olr-label olr-required'>Alamat &nbsp;</span>
+            <input type='text' name='txt_street' size='30' maxlength='30' /><br />
+            <span class='olr-label olr-required'>Bandar &nbsp;</span>
+            <input type='text' name='txt_city' size='30' maxlength='30' /><br />
+            <span class='olr-label olr-required'>Negeri &nbsp;</span>
+            <input type='text' name='txt_state' size='2' maxlength='2' /><br />
+            <span class='olr-label olr-required'>Poskod &nbsp;</span>
+            <input type='text' name='txt_zip' size='5' maxlength='5' /><br />
+            <span class='olr-label olr-required'>Alamat Email &nbsp;</span>
+            <input type='text' name='txt_email1' size='40' maxlength='40' /><br />
+            <span class='olr-label olr-required'>Alamat Penghantaran &nbsp;</span>
+            <input type='text' name='num_men_dancers' size='1' maxlength='1' /><br />
+            <span class='olr-label olr-required'>Alamat Penghantaran(sambungan) &nbsp;</span>
+            <input type='text' name='num_women_dancers' size='1' maxlengt h='1' /><br />
+            <span class='olr-label'>Maklumat Tambahan &nbsp;</span>
+            <input type='text' name='txt_custom_text' size='40' maxlength='40' /><br />
+            <span class='olr-label'>Nombor Dihubungi(Lain) &nbsp;</span>
+            <input type='text' name='num_custom_num' size='2' maxlength='2' /><br />
+            <span class='olr-label'>Nombor Dihubungi(Lain) &nbsp;</span>
+            <input type='text' name='dec_custom_dec' size='6' maxlength='6' /><br />
+            <input type='checkbox' name='chk_custom_opt' value='' />
+            <span class='olr-label'>Perhubungan di nyatakan masih aktif</span><br />
+            <span class='olr-label'>Maklumat Tambahan(sekiranya ada) &nbsp;</span>(anggaran perkataan = 1000 chars)<br />
+            <textarea name='txt_notes' cols='80' rows='13'></textarea><br />
+            <fieldset class='olr-line-ht-150'>
+                <legend> Pembelian </legend>
+                <table class='olr-table2'>
+                    <tbody>
+                        <tr>
+                            <th class='olr-left'>Pembelian</th>
+                            <th class='olr-left'>Harga&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                            <th class='olr-right'>Jumlah</th>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td><input></input></td>
+                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='olr-right'>
+                                <input type='text' size='2' maxlength='2' value='0'
+                                       name='num_aqty2'
+                                       onchange='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><input></input></td>
+                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='olr-right'>
+                                <input type='text' size='2' maxlength='2' value='0'
+                                       name='num_aqty2'
+                                       onchange='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input></input></td>
+                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='olr-right'>
+                                <input type='text' size='2' maxlength='2' value='0'
+                                       name='num_aqty2'
+                                       onchange='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input></input></td>
+                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='olr-right'>
+                                <input type='text' size='2' maxlength='2' value='0'
+                                       name='num_aqty2'
+                                       onchange='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input></input></td>
+                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='olr-right'>
+                                <input type='text' size='2' maxlength='2' value='0'
+                                       name='num_aqty2'
+                                       onchange='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input></input></td>
+                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='olr-right'>
+                                <input type='text' size='2' maxlength='2' value='0'
+                                       name='num_aqty2'
+                                       onchange='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input></input></td>
+                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='olr-right'>
+                                <input type='text' size='2' maxlength='2' value='0'
+                                       name='num_aqty2'
+                                       onchange='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input></input></td>
+                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='olr-right'>
+                                <input type='text' size='2' maxlength='2' value='0'
+                                       name='num_aqty2'
+                                       onchange='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input></input></td>
+                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='olr-right'>
+                                <input type='text' size='2' maxlength='2' value='0'
+                                       name='num_aqty2'
+                                       onchange='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input></input></td>
+                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='olr-right'>
+                                <input type='text' size='2' maxlength='2' value='0'
+                                       name='num_aqty2'
+                                       onchange='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input></input></td>
+                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='olr-right'>
+                                <input type='text' size='2' maxlength='2' value='0'
+                                       name='num_aqty2'
+                                       onchange='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input></input></td>
+                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='olr-right'>
+                                <input type='text' size='2' maxlength='2' value='0'
+                                       name='num_aqty2'
+                                       onchange='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input></input></td>
+                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='olr-right'>
+                                <input type='text' size='2' maxlength='2' value='0'
+                                       name='num_aqty2'
+                                       onchange='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan='3'><hr /></td>
+                        </tr>
+                        <tr>
+                            <td>Keseluruhan</td>
+                            <td class='olr-left'>$<span id='total'>0</span></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Deposit(jika ada) ($<span id='price_deposit'><input /></span>)</td>
+                            <td class='olr-left'>$<span id='deposit_total'>0</span></td>
+                            <td class='olr-right'>
+                                <input type='checkbox' name='chk_deposit'
+                                       value='' onclick='UpdateTotal(true);' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bayaran</td>
+                            <td class='olr-left'>$<span id='price_paytotal'>0</span></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Bayaran Sehingga <input /></td>
+                            <td class='olr-left'>
+                                $<span id='price_bal_due'>0</span>
+                                <input type='hidden' name='hid_bal_due' value='' />
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type='hidden' name='hid_total' value='0' />
+                <input type='hidden' name='hid_paypaltotal' value='0' />
+            </fieldset>
+
+            <fieldset>
+                <legend><center>PayMY</center></legend>
+                <p>
+                    Sila isi borang. <br />
+                    Sahkan Maklumat untuk pendaftaran sekiranya benar. Email akan dihantarkan kepada anda<br />
+                    Email Pengesahan akan dihantarkan.
+                </p>
+                <p style='text-align:center;'>
+                    <input type='submit' value=' Bayar ' name='submit' 
+                           onclick='return submit_form();' />
+                </p>
+            </fieldset>
+            <p>Sebarang masalah, sila hubungi,<a href="mailto:razorlex1995@gmail.com">Admin</a> bayaran ini.</p>
+            <script>
+    var g_paypal_fee_fixed = 0.3;
+                var g_paypal_fee_percent = 0.029;
+                var g_attendance_multi_select = 0;
+                var g_use_gender_data = 1;
+                CheckEarlyRegDate('January 15, 2222', 0);
+                UpdateTotal(false);</script>
+        </form>
+        <p style='font-family:arial,sans-serif; font-size:8pt; text-align:center;'>Disediakan oleh<a href='http://www.paymyserver.ml/online-register/home.html' target='_blank'>Alexander Eric</a>, versi 1.0.0</p>
+    </div>
+</body>
+</html>
