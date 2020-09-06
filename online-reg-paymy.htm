@@ -41,124 +41,124 @@ document.oncontextmenu=new Function("alert(message);return false")
     <meta name="description" description="the ip was reserve, all non battery commercials are not included"/>
     <link rel='stylesheet' href='paymy-styles.css'>
     <style>
-        .olr-table1 {
+        .paymy-table1 {
             border-collapse: collapse;
         }
 
-            .olr-table1 th, .olr-table1 td {
+            .paymy-table1 th, .paymy-table1 td {
                 padding: 2px;
                 border: 0;
             }
 
-        .olr-table2 {
+        .paymy-table2 {
             border-collapse: collapse;
         }
 
-            .olr-table2 th, .olr-table2 td {
+            .paymy-table2 th, .paymy-table2 td {
                 padding: 4px;
                 border: 0;
             }
     </style>
-    <script src='olr-validate.js'></script>
+    <script src='paymy-validate.js'></script>
 </head>
 <body>
-    <div id='olr-content'>
-        <form method='post' id='OnlineRegForm' name='OnlineRegForm' action='olr-pp-send.php'>
+    <div id='paymy-content'>
+        <form method='post' id='OnlineRegForm' name='OnlineRegForm' action='paymy-pp-send.php'>
             <center><h><img src="https://i.ibb.co/c66qkVT/paymy-4.png" /></h></center>
             <h2 style='text-align:center;'>PayMy<br />Daftar</h2>
             <p>e-payment Gateway <b>PayMY</b> </p>
 
             <!-- list of required fields -->
             <input type='hidden' name='required_fields' value='txt_firstname1,txt_lastname1,rad_gender1,txt_street,txt_city,txt_state,txt_zip,txt_email1,num_men_dancers,num_women_dancers,txt_phone1,rad_number1,sel_number2' />
-            <span class='olr-label olr-required'>Nama Pertama:&nbsp;</span>  <input type='text' name='txt_firstname1' size='20' maxlength='20' />&nbsp;&nbsp;&nbsp;
-            <span class='olr-label olr-required'>Nama Akhir:&nbsp;</span>  <input type='text' name='txt_lastname1' size='20' maxlength='20' />&nbsp;&nbsp;&nbsp;<span class='olr-label olr-required'>Jantina:&nbsp;<input type='radio' name='rad_gender1' value='F' /> P &nbsp;&nbsp;<input type='radio' name='rad_gender1' value='M' /> L</span>
-            &nbsp;&nbsp;&nbsp;<input type='checkbox' name='chk_student1' value='' /> <span class='olr-label'>Pelajar</span>
-            &nbsp;&nbsp;&nbsp;<input type='checkbox' name='chk_child1' value='' /> <span class='olr-label'>Tanggungan</span>
-            &nbsp;&nbsp;&nbsp; <span class='olr-label'>Umur Tanggungan:&nbsp;</span> <input type='text' size='2' maxlength='2' name='num_childage1' /><br />
-            <table class='olr-table1'>
+            <span class='paymy-label paymy-required'>Nama Pertama:&nbsp;</span>  <input type='text' name='txt_firstname1' size='20' maxlength='20' />&nbsp;&nbsp;&nbsp;
+            <span class='paymy-label paymy-required'>Nama Akhir:&nbsp;</span>  <input type='text' name='txt_lastname1' size='20' maxlength='20' />&nbsp;&nbsp;&nbsp;<span class='paymy-label paymy-required'>Jantina:&nbsp;<input type='radio' name='rad_gender1' value='F' /> P &nbsp;&nbsp;<input type='radio' name='rad_gender1' value='M' /> L</span>
+            &nbsp;&nbsp;&nbsp;<input type='checkbox' name='chk_student1' value='' /> <span class='paymy-label'>Pelajar</span>
+            &nbsp;&nbsp;&nbsp;<input type='checkbox' name='chk_child1' value='' /> <span class='paymy-label'>Tanggungan</span>
+            &nbsp;&nbsp;&nbsp; <span class='paymy-label'>Umur Tanggungan:&nbsp;</span> <input type='text' size='2' maxlength='2' name='num_childage1' /><br />
+            <table class='paymy-table1'>
                 <tbody>
                     <tr>
-                        <td class='olr-center olr-top'>Nama Pertama</td>
-                        <td class='olr-center olr-top'>Nama Akhir</td>
-                        <td class='olr-center olr-top'>Jantina</td>
-                        <td class='olr-center olr-top'>Tanggungan</td>
-                        <td class='olr-center olr-top'>Umur Tanggungan</td>
-                        <td class='olr-center olr-top'>Status</td>
+                        <td class='paymy-center paymy-top'>Nama Pertama</td>
+                        <td class='paymy-center paymy-top'>Nama Akhir</td>
+                        <td class='paymy-center paymy-top'>Jantina</td>
+                        <td class='paymy-center paymy-top'>Tanggungan</td>
+                        <td class='paymy-center paymy-top'>Umur Tanggungan</td>
+                        <td class='paymy-center paymy-top'>Status</td>
                     </tr>
                     <tr>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='text' size='20' maxlength='20'
                                    name='txt_firstname2' />
                         </td>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='text' size='20' maxlength='20'
                                    name='txt_lastname2' />
                         </td>
-                        <td class='olr-required olr-center'>
+                        <td class='paymy-required paymy-center'>
                             <input type='radio' name='rad_gender2' value='F' /> P&nbsp;
                             <input type='radio' name='rad_gender2' value='M' /> L
                         </td>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='checkbox' value=''
                                    name='chk_child2' />
                         </td>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='text' size='2' maxlength='2'
                                    name='num_childage2' />
                         </td>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='checkbox' value=''
                                    name='chk_student2' />
                         </td>
                     </tr>
                     <tr>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='text' size='20' maxlength='20'
                                    name='txt_firstname3' />
                         </td>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='text' size='20' maxlength='20'
                                    name='txt_lastname3' />
                         </td>
-                        <td class='olr-required olr-center'>
+                        <td class='paymy-required paymy-center'>
                             <input type='radio' name='rad_gender3' value='F' /> P&nbsp;
                             <input type='radio' name='rad_gender3' value='M' /> L
                         </td>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='checkbox' value=''
                                    name='chk_child3' />
                         </td>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='text' size='2' maxlength='2'
                                    name='num_childage3' />
                         </td>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='checkbox' value=''
                                    name='chk_student3' />
                         </td>
                     </tr>
                     <tr>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='text' size='20' maxlength='20'
                                    name='txt_firstname4' />
                         </td>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='text' size='20' maxlength='20'
                                    name='txt_lastname4' />
                         </td>
-                        <td class='olr-required olr-center'>
+                        <td class='paymy-required paymy-center'>
                             <input type='radio' name='rad_gender4' value='F' /> P&nbsp;
                             <input type='radio' name='rad_gender4' value='M' /> L
                         </td>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='checkbox' value=''
                                    name='chk_child4' />
                         </td>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='text' size='2' maxlength='2'
                                    name='num_childage4' />
                         </td>
-                        <td class='olr-center'>
+                        <td class='paymy-center'>
                             <input type='checkbox' value=''
                                    name='chk_student4' />
                         </td>
@@ -167,58 +167,57 @@ document.oncontextmenu=new Function("alert(message);return false")
             </table>
             <input type='checkbox' name='chk_noshare' value='' />
             All Information above are true<br />
-            <span class='olr-label olr-required'>
+            <span class='paymy-label paymy-required'>
                 Hubungi:&nbsp;
                 <input type='text' name='txt_phone1' value='' maxlength='12' />&nbsp;&nbsp; &nbsp;&nbsp;
                 <input type='radio' name='rad_phone1' value='Home' checked='checked' /> Rumah&nbsp;&nbsp;
                 <input type='radio' name='rad_phone1' value='Cell' /> Telefon Bimbit&nbsp;&nbsp;
                 <input type='radio' name='rad_phone1' value='Work' /> Tempat Kerja&nbsp;&nbsp;
             </span><br />
-            <span class='olr-label'>
+            <span class='paymy-label'>
                 Phone 2:&nbsp;
                 <input type='text' name='txt_phone2' value='' maxlength='12' />&nbsp;&nbsp; &nbsp;&nbsp;
                 <input type='radio' name='rad_phone2' value='Home' /> Rumah&nbsp;&nbsp;
                 <input type='radio' name='rad_phone2' value='Cell' checked='checked' /> Tel Bimbit&nbsp;&nbsp;
                 <input type='radio' name='rad_phone2' value='Work' /> Tempat Kerjak&nbsp;&nbsp;
             </span><br />
-            <span class='olr-label olr-required'>Alamat &nbsp;</span>
+            <span class='paymy-label paymy-required'>Alamat &nbsp;</span>
             <input type='text' name='txt_street' size='30' maxlength='30' /><br />
-            <span class='olr-label olr-required'>Bandar &nbsp;</span>
+            <span class='paymy-label paymy-required'>Bandar &nbsp;</span>
             <input type='text' name='txt_city' size='30' maxlength='30' /><br />
-            <span class='olr-label olr-required'>Negeri &nbsp;</span>
+            <span class='paymy-label paymy-required'>Negeri &nbsp;</span>
             <input type='text' name='txt_state' size='2' maxlength='2' /><br />
-            <span class='olr-label olr-required'>Poskod &nbsp;</span>
+            <span class='paymy-label paymy-required'>Poskod &nbsp;</span>
             <input type='text' name='txt_zip' size='5' maxlength='5' /><br />
-            <span class='olr-label olr-required'>Alamat Email &nbsp;</span>
+            <span class='paymy-label paymy-required'>Alamat Email &nbsp;</span>
             <input type='text' name='txt_email1' size='40' maxlength='40' /><br />
-            <span class='olr-label olr-required'>Alamat Penghantaran &nbsp;</span>
+            <span class='paymy-label paymy-required'>Alamat Penghantaran &nbsp;</span>
             <input type='text' name='num_men_dancers' size='1' maxlength='1' /><br />
-            <span class='olr-label olr-required'>Alamat Penghantaran(sambungan) &nbsp;</span>
-            <input type='text' name='num_women_dancers' size='1' maxlengt h='1' /><br />
-            <span class='olr-label'>Maklumat Tambahan &nbsp;</span>
+            <span class='paymy-label paymy-required'>Alamat Penghantaran(sambungan) &nbsp;</span>
+            <span class='paymy-label'>Maklumat Tambahan &nbsp;</span>
             <input type='text' name='txt_custom_text' size='40' maxlength='40' /><br />
-            <span class='olr-label'>Nombor Dihubungi(Lain) &nbsp;</span>
+            <span class='paymy-label'>Nombor Dihubungi(Lain) &nbsp;</span>
             <input type='text' name='num_custom_num' size='2' maxlength='2' /><br />
-            <span class='olr-label'>Nombor Dihubungi(Lain) &nbsp;</span>
+            <span class='paymy-label'>Nombor Dihubungi(Lain) &nbsp;</span>
             <input type='text' name='dec_custom_dec' size='6' maxlength='6' /><br />
             <input type='checkbox' name='chk_custom_opt' value='' />
-            <span class='olr-label'>Perhubungan di nyatakan masih aktif</span><br />
-            <span class='olr-label'>Maklumat Tambahan(sekiranya ada) &nbsp;</span>(anggaran perkataan = 1000 chars)<br />
+            <span class='paymy-label'>Perhubungan di nyatakan masih aktif</span><br />
+            <span class='paymy-label'>Maklumat Tambahan(sekiranya ada) &nbsp;</span>(anggaran perkataan = 1000 chars)<br />
             <textarea name='txt_notes' cols='80' rows='13'></textarea><br />
-            <fieldset class='olr-line-ht-150'>
+            <fieldset class='paymy-line-ht-150'>
                 <legend> Pembelian </legend>
-                <table class='olr-table2'>
+                <table class='paymy-table2'>
                     <tbody>
                         <tr>
-                            <th class='olr-left'>Pembelian</th>
-                            <th class='olr-left'>Harga&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                            <th class='olr-right'>Jumlah</th>
+                            <th class='paymy-left'>Pembelian</th>
+                            <th class='paymy-left'>Harga&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                            <th class='paymy-right'>Jumlah</th>
                         </tr>
                         <tr>
                         <tr>
                             <td><input></input></td>
-                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='paymy-right'>
                                 <input type='text' size='2' maxlength='2' value='0'
                                        name='num_aqty2'
                                        onchange='UpdateTotal(true);' />
@@ -227,8 +226,8 @@ document.oncontextmenu=new Function("alert(message);return false")
 
                         <tr>
                             <td><input></input></td>
-                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='paymy-right'>
                                 <input type='text' size='2' maxlength='2' value='0'
                                        name='num_aqty2'
                                        onchange='UpdateTotal(true);' />
@@ -236,8 +235,8 @@ document.oncontextmenu=new Function("alert(message);return false")
                         </tr>
                         <tr>
                             <td><input></input></td>
-                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='paymy-right'>
                                 <input type='text' size='2' maxlength='2' value='0'
                                        name='num_aqty2'
                                        onchange='UpdateTotal(true);' />
@@ -245,8 +244,8 @@ document.oncontextmenu=new Function("alert(message);return false")
                         </tr>
                         <tr>
                             <td><input></input></td>
-                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='paymy-right'>
                                 <input type='text' size='2' maxlength='2' value='0'
                                        name='num_aqty2'
                                        onchange='UpdateTotal(true);' />
@@ -254,8 +253,8 @@ document.oncontextmenu=new Function("alert(message);return false")
                         </tr>
                         <tr>
                             <td><input></input></td>
-                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='paymy-right'>
                                 <input type='text' size='2' maxlength='2' value='0'
                                        name='num_aqty2'
                                        onchange='UpdateTotal(true);' />
@@ -263,8 +262,8 @@ document.oncontextmenu=new Function("alert(message);return false")
                         </tr>
                         <tr>
                             <td><input></input></td>
-                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='paymy-right'>
                                 <input type='text' size='2' maxlength='2' value='0'
                                        name='num_aqty2'
                                        onchange='UpdateTotal(true);' />
@@ -272,8 +271,8 @@ document.oncontextmenu=new Function("alert(message);return false")
                         </tr>
                         <tr>
                             <td><input></input></td>
-                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='paymy-right'>
                                 <input type='text' size='2' maxlength='2' value='0'
                                        name='num_aqty2'
                                        onchange='UpdateTotal(true);' />
@@ -281,8 +280,8 @@ document.oncontextmenu=new Function("alert(message);return false")
                         </tr>
                         <tr>
                             <td><input></input></td>
-                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='paymy-right'>
                                 <input type='text' size='2' maxlength='2' value='0'
                                        name='num_aqty2'
                                        onchange='UpdateTotal(true);' />
@@ -290,8 +289,8 @@ document.oncontextmenu=new Function("alert(message);return false")
                         </tr>
                         <tr>
                             <td><input></input></td>
-                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='paymy-right'>
                                 <input type='text' size='2' maxlength='2' value='0'
                                        name='num_aqty2'
                                        onchange='UpdateTotal(true);' />
@@ -299,8 +298,8 @@ document.oncontextmenu=new Function("alert(message);return false")
                         </tr>
                         <tr>
                             <td><input></input></td>
-                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='paymy-right'>
                                 <input type='text' size='2' maxlength='2' value='0'
                                        name='num_aqty2'
                                        onchange='UpdateTotal(true);' />
@@ -308,8 +307,8 @@ document.oncontextmenu=new Function("alert(message);return false")
                         </tr>
                         <tr>
                             <td><input></input></td>
-                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='paymy-right'>
                                 <input type='text' size='2' maxlength='2' value='0'
                                        name='num_aqty2'
                                        onchange='UpdateTotal(true);' />
@@ -317,8 +316,8 @@ document.oncontextmenu=new Function("alert(message);return false")
                         </tr>
                         <tr>
                             <td><input></input></td>
-                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='paymy-right'>
                                 <input type='text' size='2' maxlength='2' value='0'
                                        name='num_aqty2'
                                        onchange='UpdateTotal(true);' />
@@ -326,8 +325,8 @@ document.oncontextmenu=new Function("alert(message);return false")
                         </tr>
                         <tr>
                             <td><input></input></td>
-                            <td class='olr-left'>$<span id='aprice2'><input></input></span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='aprice2'><input></input></span></td>
+                            <td class='paymy-right'>
                                 <input type='text' size='2' maxlength='2' value='0'
                                        name='num_aqty2'
                                        onchange='UpdateTotal(true);' />
@@ -338,25 +337,25 @@ document.oncontextmenu=new Function("alert(message);return false")
                         </tr>
                         <tr>
                             <td>Keseluruhan</td>
-                            <td class='olr-left'>$<span id='total'>0</span></td>
+                            <td class='paymy-left'>$<span id='total'>0</span></td>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
                             <td>Deposit(jika ada) ($<span id='price_deposit'><input /></span>)</td>
-                            <td class='olr-left'>$<span id='deposit_total'>0</span></td>
-                            <td class='olr-right'>
+                            <td class='paymy-left'>$<span id='deposit_total'>0</span></td>
+                            <td class='paymy-right'>
                                 <input type='checkbox' name='chk_deposit'
                                        value='' onclick='UpdateTotal(true);' />
                             </td>
                         </tr>
                         <tr>
                             <td>Bayaran</td>
-                            <td class='olr-left'>$<span id='price_paytotal'>0</span></td>
+                            <td class='paymy-left'>$<span id='price_paytotal'>0</span></td>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
                             <td>Bayaran Sehingga <input /></td>
-                            <td class='olr-left'>
+                            <td class='paymy-left'>
                                 $<span id='price_bal_due'>0</span>
                                 <input type='hidden' name='hid_bal_due' value='' />
                             </td>
