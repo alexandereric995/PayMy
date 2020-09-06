@@ -1,0 +1,33 @@
+/* Version 1.0.0
+* Create By Alexander Eric For PayMY Gateway
+* PayMY payment gateway is an epayment as paypal
+*/
+
+/* Set colors and font for whole page */
+body {font-family: Arial, Helvetica, sans-serif; font-size: 10pt; 
+color: #000000; background-color: #fffff; line-height: 1.5; 
+margin-left: auto; margin-right: auto; padding:10px; border:0px;
+width: 750px;
+border: solid 10px #fc0000; border-radius: 25px;
+box-shadow: 6px 6px 6px #fc0000;}
+
+#paymy-content {margin-right: auto; margin-left: auto; margin-top: 0px; margin-bottom: 0px; } 
+
+#paymy-content p, #olr-content td, #olr-content span, #olr-content input, 
+#paymy-content textarea, #olr-content select, #paymy-content option{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 10pt;}
+
+/* Make each fieldset/section have rounded corners and shadow */
+#paymy-content fieldset {margin-top: 10px; border-radius: 10px; box-shadow: 3px 3px 3px #b8b8b8;}
+
+#paymy-content legend {font-weight: bold;} /* title of fieldset/section is bold */
+
+.paymy-label {line-height: 200%;} /* extra vertical space for labels */
+.paymy-err {border: 3px solid red;} /* red box around fields with errors */
+
+.paymy-line-ht-150{line-height: 150%;} /* extra line spacing */
+.paymy-bold {font-weight: bold;}
+.paymy-required {font-weight: bold;}
+.paymy-left {text-align: left;}
+.paymy-right {text-align: right;}
